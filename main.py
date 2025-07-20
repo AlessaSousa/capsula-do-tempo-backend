@@ -16,4 +16,4 @@ app.add_middleware(
 
 user.Base.metadata.create_all(bind=engine)
 app.include_router(auth.router, prefix="/auth", tags=["Auth"])
-# app.include_router(capsule.router, prefix="/capsule")
+app.include_router(capsule.router, prefix="/capsule", tags=["Capsule"])
