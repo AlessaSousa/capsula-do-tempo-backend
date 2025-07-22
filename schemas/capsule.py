@@ -12,6 +12,7 @@ class CapsuleCreate(BaseModel):
 class CapsuleResponse(CapsuleCreate):
     id: int
     created_at: datetime
+    sent: bool
     
     class Config:
         orm_mode = True
