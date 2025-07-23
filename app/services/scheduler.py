@@ -1,9 +1,9 @@
 from apscheduler.schedulers.background import BackgroundScheduler
 from sqlalchemy.orm import Session
-from database import SessionLocal
-from models.capsule import Capsule
+from app.database import SessionLocal
+from app.models.capsule import Capsule
 from datetime import datetime
-from services.email import send_capsule_email
+from app.services.email import send_capsule_email
 
 def check_capsules():
     db: Session = SessionLocal()

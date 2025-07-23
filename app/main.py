@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routes import auth, capsule
-from database import engine, Base
-from models import user
-from services.scheduler import start_scheduler
+from app.routes import auth, capsule
+from app.database import engine, Base
+from app.models import user
+from app.services.scheduler import start_scheduler
 
 app = FastAPI()
 

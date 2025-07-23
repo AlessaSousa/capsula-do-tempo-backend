@@ -1,7 +1,7 @@
 from sqlalchemy import Column, String, Integer, Text, DateTime, ForeignKey, Boolean
 from sqlalchemy.orm import relationship
 from datetime import datetime
-from database import Base
+from app.database import Base
 
 class Capsule(Base):
     __tablename__ = "capsules"
