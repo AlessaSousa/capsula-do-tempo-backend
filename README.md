@@ -25,15 +25,18 @@ Permite cadastro/login de usuários criação e envio programado de cápsulas vi
 
 ## Pré-requisitos
 
-- Docker instalado https://docs.docker.com/get-docker/ 
-- Git instalado (opcional para clonar o repositório)
+### Docker instalado 
+https://docs.docker.com/get-docker/ 
+
+### Git instalado (opcional para clonar o repositório)
 
 ---
 
 ## Instalação
 
-1. Clone o repositório:  
+### Clone o repositório:  
     git clone https://github.com/AlessaSousa/capsula-do-tempo-backend.git
+    
     cd capsula-do-tempo-backend
 
 ---
@@ -83,18 +86,12 @@ ccapsula-tempo-backend/
 ## Execução
 ### Subir containers
     docker compose up --build
-
-#### Isso irá:
-    - Baixar as imagens necessárias
-    - Construir a imagem do backend
-    - Subir container PostgreSQL e FastAPI
-    
-#### Acesse a documentação: 
-    http://localhost:8000/docs
 ### Remover containers
     docker compose down
 ### Rodar backend localmente (fora do docker)
     py run.py
+### Acesse a documentação: 
+    http://localhost:8000/docs
 
 ---
 
