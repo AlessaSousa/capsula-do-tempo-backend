@@ -35,6 +35,14 @@ A aplicação permite cadastro/login de usuários criação e envio programado d
 
     cd capsula-do-tempo-backend
 
+#### Criar arquivo .env com as seguintes váriaveis: 
+    DATABASE_URL=postgresql://postgres:postgre123@postgres:5432/capsula_tempo_db
+    SECRET_KEY=sua-chave-secreta
+    SMTP_SERVER=smtp.gmail.com
+    SMTP_PORT=465
+    SMTP_USER=user@exemplo.com
+    SMTP_PASSWORD=sua-senha
+
 ---
 
 ## Estrutura de Pastas
