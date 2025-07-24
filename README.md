@@ -30,7 +30,7 @@ A aplicação permite cadastro/login de usuários criação e envio programado d
 
 #### Git instalado (opcional para clonar o repositório)
     https://git-scm.com/downloads
-    
+
 #### Visual Studio Code (ou outra IDE de sua preferência)
     https://code.visualstudio.com/download
 
@@ -46,7 +46,8 @@ A aplicação permite cadastro/login de usuários criação e envio programado d
 ---
 
 ## Estrutura de Pastas
-ccapsula-tempo-backend/
+```bash
+capsula-tempo-backend/
 ├── app/
 │   ├── core/                 # Configurações globais e dependências
 │   │   ├── config.py
@@ -78,6 +79,8 @@ ccapsula-tempo-backend/
 ├── venv/                     # Ambiente virtual (ignorado no container)
 ├── run.py                    # Execução auxiliar (opcional)
 └── README.md                 # Este arquivo
+```
+---
 
 ## Funcionalidades
 - Cadastro de usuários com validação e hash de senha
