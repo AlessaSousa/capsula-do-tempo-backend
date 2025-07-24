@@ -9,17 +9,9 @@ A aplicação permite cadastro/login de usuários criação e envio programado d
 
 ## Tecnologias
 
-- Python 3.12  
-- FastAPI  
-- PostgreSQL 15  
-- SQLAlchemy  
-- Pydantic  
+- Python 3.12   
 - Docker 
-- Uvicorn  
-- python-dotenv  
-- passlib (hash de senhas)  
-- python-jose (JWT)  
-- email-validator  
+- VSCode
 
 ---
 
