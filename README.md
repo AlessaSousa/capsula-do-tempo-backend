@@ -84,13 +84,13 @@ ccapsula-tempo-backend/
 ### Subir containers
     docker compose up --build
 
-    Isso irá:
+#### Isso irá:
     - Baixar as imagens necessárias
     - Construir a imagem do backend
     - Subir container PostgreSQL e FastAPI
-
-    Acesse a documentação: 
-    - http://localhost:8000/docs
+    
+#### Acesse a documentação: 
+    http://localhost:8000/docs
 ### Remover containers
     docker compose down
 ### Rodar backend localmente (fora do docker)
