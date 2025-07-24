@@ -25,18 +25,18 @@ Permite cadastro/login de usuários criação e envio programado de cápsulas vi
 
 ## Pré-requisitos
 
-### Docker instalado 
-https://docs.docker.com/get-docker/ 
+#### Docker instalado 
+    https://docs.docker.com/get-docker/ 
 
-### Git instalado (opcional para clonar o repositório)
+#### Git instalado (opcional para clonar o repositório)
 
 ---
 
 ## Instalação
 
-### Clone o repositório:  
+#### Clone o repositório:  
     git clone https://github.com/AlessaSousa/capsula-do-tempo-backend.git
-    
+
     cd capsula-do-tempo-backend
 
 ---
@@ -76,21 +76,21 @@ ccapsula-tempo-backend/
 └── README.md                 # Este arquivo
 
 ## Funcionalidades
-### Cadastro de usuários com validação e hash de senha
-### Login com autenticação JWT
-### Criação e listagem de cápsulas do tempo
-### Envio programado de cápsulas via email 
+- Cadastro de usuários com validação e hash de senha
+- Login com autenticação JWT
+- Criação e listagem de cápsulas do tempo
+- Envio programado de cápsulas via email 
 
 ---
 
 ## Execução
-### Subir containers
+#### Subir containers
     docker compose up --build
-### Remover containers
+#### Remover containers
     docker compose down
-### Rodar backend localmente (fora do docker)
+#### Rodar backend localmente (fora do docker)
     py run.py
-### Acesse a documentação: 
+#### Acesse a documentação: 
     http://localhost:8000/docs
 
 ---
