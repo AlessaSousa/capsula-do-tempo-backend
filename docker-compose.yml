@@ -14,5 +14,18 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
 
+  api:
+    build: .
+    container_name: fastapi_capsula
+    restart: always
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+    env_file:
+      - .env
+    volumes: 
+      - .:/app
+    
 volumes:
   pgdata:
