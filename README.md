@@ -39,38 +39,38 @@ Permite cadastro/login de usuários criação e envio programado de cápsulas vi
 ---
 
 ## Estrutura de Pastas
-capsula-do-tempo-backend/
-├── app/                    
-│   ├── core/   
-|       ├── config.py
-|       ├── depedencies.py    
-|   ├── crud/
-|       ├──capsule.py        
-│   ├── models/  
-|       ├── capsule.py
-|       ├── user.py           
-│   ├── routes/   
-|       ├── auth.py
-|       ├──capsule.py           
-│   ├── schemas/
-|       ├── capsule.py
-|       ├── user.py
-|   ├── service/ 
-|       ├── email.py
-|       ├── scheduler.py             
-│   ├── utils/ 
-|       ├── auth.py
-|   ├── database.py           
-│   └── main.py             
+ccapsula-tempo-backend/
+├── app/
+│   ├── core/                 # Configurações globais e dependências
+│   │   ├── config.py
+│   │   └── depedencies.py
+│   ├── crud/                 # Operações com o banco de dados
+│   │   └── capsule.py
+│   ├── models/               # Modelos SQLAlchemy
+│   │   ├── capsule.py
+│   │   └── user.py
+│   ├── routes/               # Rotas da API
+│   │   ├── auth.py
+│   │   └── capsule.py
+│   ├── schemas/              # Schemas Pydantic (validação de dados)
+│   │   ├── capsule.py
+│   │   └── user.py
+│   ├── service/              # Lógica de envio de e-mail e agendamento
+│   │   ├── email.py
+│   │   └── scheduler.py
+│   ├── utils/                # Utilitários auxiliares
+│   │   └── auth.py
+│   ├── database.py           # Conexão com o banco de dados
+│   └── main.py               # Ponto de entrada da aplicação
 │
-├── dockerfile               
-├── docker-compose.yml       
-├── requirements.txt         
-├── .env  
-├── venv
-├── .gitignore                   
-├── README.md   
-├── run.py            
+├── dockerfile                # Dockerfile da aplicação FastAPI
+├── docker-compose.yml        # Orquestração dos serviços com Docker
+├── requirements.txt          # Dependências da aplicação
+├── .env                      # Variáveis de ambiente
+├── .gitignore                # Arquivos a serem ignorados pelo Git
+├── venv/                     # Ambiente virtual (ignorado no container)
+├── run.py                    # Execução auxiliar (opcional)
+└── README.md                 # Este arquivo
 
 ## Funcionalidades
 ### Cadastro de usuários com validação e hash de senha
