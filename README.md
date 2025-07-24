@@ -78,6 +78,7 @@ capsula-do-tempo-backend/
 ### Criação e listagem de cápsulas do tempo
 ### Envio programado de cápsulas via email 
 
+---
 
 ## Execução
 ### Subir containers
@@ -94,6 +95,8 @@ capsula-do-tempo-backend/
     docker compose down
 ### Rodar backend localmente (fora do docker)
     py run.py
+
+---
 
 ## Licença
 MIT License © Alessandra de Sousa
