@@ -2,8 +2,8 @@
 
 ## Descrição
 
-Backend da aplicação Cápsula do Tempo (ChronoBox) desenvolvido em FastAPI com banco PostgreSQL utilizando Docker Compose para orquestração dos containers.  
-Permite cadastro/login de usuários criação e envio programado de cápsulas via email.
+Backend da aplicação Cápsula do Tempo (ChronoBox) desenvolvido em Python com FastAPI e utilizando Docker para orquestração de containers.  
+A aplicação permite cadastro/login de usuários criação e envio programado de cápsulas via email.
 
 ---
 
@@ -29,6 +29,9 @@ Permite cadastro/login de usuários criação e envio programado de cápsulas vi
     https://docs.docker.com/get-docker/ 
 
 #### Git instalado (opcional para clonar o repositório)
+    https://git-scm.com/downloads
+#### Visual Studio Code (ou outra IDE de sua preferência)
+    https://code.visualstudio.com/download
 
 ---
 
