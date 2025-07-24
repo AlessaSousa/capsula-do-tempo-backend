@@ -7,14 +7,6 @@ A aplicação permite cadastro/login de usuários criação e envio programado d
 
 ---
 
-## Tecnologias
-
-- Python 3.12   
-- Docker 
-- VSCode
-
----
-
 ## Pré-requisitos
 
 #### Docker instalado 
@@ -25,6 +17,9 @@ A aplicação permite cadastro/login de usuários criação e envio programado d
 
 #### Visual Studio Code (ou outra IDE de sua preferência)
     https://code.visualstudio.com/download
+
+#### Python
+    https://www.python.org/downloads
 
 ---
 
