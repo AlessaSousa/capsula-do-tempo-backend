@@ -30,6 +30,7 @@ A aplicação permite cadastro/login de usuários criação e envio programado d
 
 #### Git instalado (opcional para clonar o repositório)
     https://git-scm.com/downloads
+    
 #### Visual Studio Code (ou outra IDE de sua preferência)
     https://code.visualstudio.com/download
 
