@@ -1,31 +1,40 @@
-version: '3.8'
+version: "3.9"
 
 services:
   postgres:
     image: postgres:15
     container_name: postgres_capsula
     restart: always
-    ports:
-      - "5432:5432"
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgre123
       POSTGRES_DB: capsula_tempo_db
+    ports:
+      - "5432:5432"
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql/data
 
-  api:
+  fastapi:
     build: .
     container_name: fastapi_capsula
-    restart: always
-    ports:
-      - "8000:8000"
     depends_on:
       - postgres
     env_file:
       - .env
-    volumes: 
-      - .:/app
-    
+    ports:
+      - "8000:8000"
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin_capsula
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin123
+    ports:
+      - "5050:80"
+    depends_on:
+      - postgres
+
 volumes:
-  pgdata:
+  postgres_data:

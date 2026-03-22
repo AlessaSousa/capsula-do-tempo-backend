@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String, Integer, Text, DateTime, ForeignKey, Boolean
 from sqlalchemy.orm import relationship
-from datetime import datetime
+from datetime import datetime, timezone
 from app.database import Base
 
 class Capsule(Base):
@@ -12,7 +12,7 @@ class Capsule(Base):
     delivery_email = Column(String(255), nullable=False)
     delivery_date = Column(DateTime, nullable=False)
     image_url = Column(String(255), nullable=True)
-    created_at = Column(DateTime, default=datetime.utcnow)
+    created_at = Column(DateTime, default=datetime.now(timezone.utc))
     
     user_id = Column(Integer, ForeignKey("users.id"))
     sent = Column(Boolean, default=False)
