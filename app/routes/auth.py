@@ -31,9 +31,3 @@ def login(credentials: UserLogin, db: Session = Depends(get_db)):
     
     token = create_access_token({"sub": user.email})
     return {"access_token": token, "token_type": "bearer", "usuario": user.name}
-
-@router.post("/logout")
-def logout(request: Request):
-    request.session.clear()
-    
-    return {"Desconectado com sucesso!"}
