@@ -90,8 +90,6 @@ capsula-tempo-backend/
     docker compose up --build
 #### Remover containers
     docker compose down
-#### Rodar backend localmente (fora do docker)
-    py run.py
 #### Acesse a documentação: 
     http://localhost:8000/docs
 
