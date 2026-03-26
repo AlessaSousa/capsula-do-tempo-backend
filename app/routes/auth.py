@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException, Depends
+from fastapi import APIRouter, HTTPException, Depends, Request
 from sqlalchemy.orm import Session
 from app.schemas.user import UserCreate, UserLogin, Token
 from app.models.user import User
@@ -30,4 +30,10 @@ def login(credentials: UserLogin, db: Session = Depends(get_db)):
         raise HTTPException(status_code=401, detail="Credenciais inválidas.")
     
     token = create_access_token({"sub": user.email})
-    return {"access_token": token, "token_type": "bearer"}
+    return {"access_token": token, "token_type": "bearer", "usuario": user.name}
+
+@router.post("/logout")
+def logout(request: Request):
+    request.session.clear()
+    
+    return {"Desconectado com sucesso!"}
